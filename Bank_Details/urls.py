@@ -21,7 +21,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api-bankdetails/',include('bank_details.urls')),
+    url(r'^api-bankdetails/'),
     url(r'^api-token-auth/', obtain_jwt_token),
     # url(r'^api-token-verify/', verify_jwt_token),
     # url(r'^api-token-refresh/', refresh_jwt_token),
